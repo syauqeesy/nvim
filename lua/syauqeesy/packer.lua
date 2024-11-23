@@ -1,6 +1,6 @@
 vim.cmd("packadd packer.nvim")
 return require('packer').startup(function(use)
-    use "wbthomason/packer.nvim"
+  use "wbthomason/packer.nvim"
 
 
   use {
@@ -19,4 +19,7 @@ return require('packer').startup(function(use)
   use "rebelot/kanagawa.nvim"
 
   use "nvim-tree/nvim-tree.lua"
+
+  use "hrsh7th/nvim-cmp"
+  use "hrsh7th/cmp-nvim-lsp"
 end)
