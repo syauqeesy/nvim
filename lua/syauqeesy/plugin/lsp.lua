@@ -46,4 +46,3 @@ require("lspconfig").gopls.setup {
   },
 }
 
-
