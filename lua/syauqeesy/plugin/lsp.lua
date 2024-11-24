@@ -18,7 +18,7 @@ require("lspconfig").lua_ls.setup {
 }
 require("lspconfig").ts_ls.setup {
   capabilites = capabilities,
-  on_attact = on_attach
+  on_attach = on_attach
 }
 
 require("lspconfig").gopls.setup {
