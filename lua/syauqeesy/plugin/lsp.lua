@@ -5,11 +5,20 @@ require("mason-lspconfig").setup({
 
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
+local on_attach = function(client, bufnr)
+  local opts = { noremap = true, silent = true, buffer = bufnr }
+
+  vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
+  vim.keymap.set("i", "<C-k>", vim.lsp.buf.hover, opts)
+end
+
 require("lspconfig").lua_ls.setup {
-  capabilities = capabilities
+  capabilities = capabilities,
+  on_attach = on_attach
 }
 require("lspconfig").ts_ls.setup {
-  capabilites = capabilities
+  capabilites = capabilities,
+  on_attact = on_attach
 }
 
 require("lspconfig").gopls.setup {
@@ -24,6 +33,8 @@ require("lspconfig").gopls.setup {
         end,
       })
     end
+
+    on_attach(client, bufnr)
   end,
   settings = {
     gopls = {
