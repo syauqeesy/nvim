@@ -18,7 +18,10 @@ return require('packer').startup(function(use)
 
   use "rebelot/kanagawa.nvim"
 
-  use "nvim-tree/nvim-tree.lua"
+  use {
+    "nvim-tree/nvim-tree.lua",
+    "nvim-tree/nvim-web-devicons"
+  }
 
   use "hrsh7th/nvim-cmp"
   use "hrsh7th/cmp-nvim-lsp"
