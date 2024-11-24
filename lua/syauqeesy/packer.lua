@@ -26,4 +26,8 @@ return require('packer').startup(function(use)
   use "hrsh7th/nvim-cmp"
   use "hrsh7th/cmp-nvim-lsp"
   use "L3MON4D3/LuaSnip"
+
+  use "tpope/vim-fugitive"
+
+  use "nvim-lualine/lualine.nvim"
 end)

@@ -6,6 +6,8 @@ require("syauqeesy.plugin.lsp")
 require("syauqeesy.plugin.kanagawa")
 require("syauqeesy.plugin.nvim-tree")
 require("syauqeesy.plugin.completion")
+require("syauqeesy.plugin.fugitive")
+require("syauqeesy.plugin.lualine")
 
 -- trim trailing whitespace
 vim.api.nvim_create_augroup("TrimTrailingWhitespace", { clear = true })
