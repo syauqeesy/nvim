@@ -4,4 +4,4 @@ vim.g.loaded_netrwPlugin = 1
 require("nvim-web-devicons")
 require("nvim-tree").setup()
 
-vim.keymap.set("n", "<c-n>", ":NvimTreeFindFileToggle<CR>")
+vim.keymap.set("n", "<C-n>", ":NvimTreeFindFileToggle<CR>")

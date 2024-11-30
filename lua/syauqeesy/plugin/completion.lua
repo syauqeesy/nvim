@@ -4,7 +4,7 @@ cmp.setup({
   mapping = cmp.mapping.preset.insert({
     ["<C-e>"] = cmp.mapping.abort(),
     ["<C-Space>"] = cmp.mapping.complete(),
-    ["<C-o>"] = cmp.mapping.confirm({ select = true })
+    ["<CR>"] = cmp.mapping.confirm({ select = true })
   }),
   snippet = {
     expand = function(args)
