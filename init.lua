@@ -1,2 +1,1 @@
-require("syauqeesy")
-
+require("configuration")

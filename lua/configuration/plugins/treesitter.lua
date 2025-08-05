@@ -1,5 +1,7 @@
-require'nvim-treesitter.configs'.setup {
-  ensure_installed = { "c", "lua", "javascript", "typescript", "go", "rust" },
+local tree = require("nvim-treesitter.configs")
+
+tree.setup{
+  ensure_installed = { "c" },
 
   sync_install = false,
 
