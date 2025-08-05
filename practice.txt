@@ -1,3 +1,0 @@
-ini insert mode bejirkahi
-ini baris kiedua
-now i can write some text
