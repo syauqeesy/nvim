@@ -1,2 +1,1 @@
 # NVIM Configuration
-
