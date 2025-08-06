@@ -6,7 +6,7 @@ local lspconfig = require("lspconfig")
 
 mason.setup()
 mason_lspconfig.setup{
-  ensure_installed = { "clangd" },
+  ensure_installed = { "clangd", "gopls", "ts_ls", "pylsp" },
   automatic_installation = true,
 }
 

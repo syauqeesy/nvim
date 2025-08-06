@@ -1,7 +1,7 @@
 local tree = require("nvim-treesitter.configs")
 
 tree.setup{
-  ensure_installed = { "c" },
+  ensure_installed = { "c", "go", "typescript", "python" },
 
   sync_install = false,
 
