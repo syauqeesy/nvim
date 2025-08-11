@@ -1,6 +1,6 @@
 require("configuration.set")
+require("configuration.map")
 require("configuration.theme")
-require("configuration.remap")
 
 require("configuration.plugins.tree")
 require("configuration.plugins.treesitter")
