@@ -1,8 +1,8 @@
 #!/bin/bash
 
-set -e
+set -euo pipefail
 
-NVIM_PACK="./pack"
+NVIM_PACK="${XDG_DATA_HOME:-$HOME/.local/share}/nvim/site/pack"
 
 PLUGINS_DIR="$NVIM_PACK/plugins/start"
 THEMES_DIR="$NVIM_PACK/themes/start"

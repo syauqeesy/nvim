@@ -2,12 +2,10 @@ local mason = require("mason")
 local mason_lspconfig = require("mason-lspconfig")
 local cmp = require("cmp")
 local cmp_nvim_lsp = require("cmp_nvim_lsp")
-local lspconfig = require("lspconfig")
 
 mason.setup()
-mason_lspconfig.setup{
+mason_lspconfig.setup {
   ensure_installed = { "clangd", "gopls", "ts_ls", "pylsp" },
-  automatic_installation = true,
 }
 
 cmp.setup{
@@ -15,13 +13,14 @@ cmp.setup{
     ["<C-Space>"] = cmp.mapping.complete(),
     ["<CR>"] = cmp.mapping.confirm({ select = true }),
   }),
-  sources = {
-    { name = "nvim_lsp" },
-  }
+  sources = { { name = "nvim_lsp" } },
 }
 
 local capabilities = cmp_nvim_lsp.default_capabilities()
 
-lspconfig.clangd.setup{
-  capabilities = capabilities,
-}
+vim.lsp.config("clangd", { capabilities = capabilities })
+vim.lsp.config("gopls",  { capabilities = capabilities })
+vim.lsp.config("ts_ls",  { capabilities = capabilities })
+vim.lsp.config("pylsp",  { capabilities = capabilities })
+
+vim.lsp.enable({ "clangd", "gopls", "ts_ls", "pylsp" })
