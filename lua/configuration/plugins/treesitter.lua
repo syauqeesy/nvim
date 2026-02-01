@@ -1,14 +1,7 @@
-local tree = require("nvim-treesitter.configs")
+local ts = require("nvim-treesitter")
 
-tree.setup{
-  ensure_installed = { "c", "go", "typescript", "python" },
+ts.setup({
+  install_dir = vim.fn.stdpath("data") .. "/site"
+})
 
-  sync_install = false,
-
-  auto_install = true,
-
-  highlight = {
-    enable = true,
-    additional_vim_regex_highlighting = false,
-  },
-}
+ts.install({ "c", "go", "typescript", "python" })
