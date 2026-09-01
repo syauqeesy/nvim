@@ -5,7 +5,7 @@ local cmp_nvim_lsp = require("cmp_nvim_lsp")
 
 mason.setup()
 mason_lspconfig.setup {
-  ensure_installed = { "clangd", "gopls", "ts_ls", "pylsp" },
+  ensure_installed = { "clangd", "gopls", "ts_ls", "pylsp", "cssls", "svelte" },
 }
 
 cmp.setup{
@@ -34,5 +34,7 @@ vim.lsp.config("clangd", { capabilities = capabilities, on_attach = on_attach })
 vim.lsp.config("gopls",  { capabilities = capabilities, on_attach = on_attach })
 vim.lsp.config("ts_ls",  { capabilities = capabilities, on_attach = on_attach })
 vim.lsp.config("pylsp",  { capabilities = capabilities, on_attach = on_attach })
+vim.lsp.config("cssls",  { capabilities = capabilities, on_attach = on_attach })
+vim.lsp.config("svelte",  { capabilities = capabilities, on_attach = on_attach })
 
-vim.lsp.enable({ "clangd", "gopls", "ts_ls", "pylsp" })
+vim.lsp.enable({ "clangd", "gopls", "ts_ls", "pylsp", "cssls", "svelte" })
