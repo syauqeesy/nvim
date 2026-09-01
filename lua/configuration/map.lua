@@ -23,3 +23,5 @@ map("v", "<C-x>", '"+d', { desc = "Cut selection" })
 map("n", "o", "o", { desc = "Insert line below" })
 map("n", "<C-o>", "O", { desc = "Insert line above" })
 
+map("n", "<C-a>", "ggVG", { desc = "Select all" })
+
