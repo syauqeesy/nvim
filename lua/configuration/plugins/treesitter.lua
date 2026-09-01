@@ -4,4 +4,4 @@ ts.setup({
   install_dir = vim.fn.stdpath("data") .. "/site"
 })
 
-ts.install({ "c", "go", "typescript", "python" })
+ts.install({ "c", "go", "typescript", "python", "svelte", "css" })
