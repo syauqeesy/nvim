@@ -25,3 +25,6 @@ map("n", "<C-o>", "O", { desc = "Insert line above" })
 
 map("n", "<C-a>", "ggVG", { desc = "Select all" })
 
+map("n", "<C-Up>", "5k", { desc = "Jump up 5 lines" })
+map("n", "<C-Down>", "5j", { desc = "Jump down 5 lines" })
+
